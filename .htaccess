@@ -1,1 +1,7 @@
+RewriteEngine On
+RewriteBase /
+
 ErrorDocument 404 https://pangit.tk/index.html
+
+RewriteCond %{REQUEST_URI} ^/404/$
+RewriteRule ^(.*)$ /index.html [L]
